@@ -1,0 +1,170 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=68;
+	taxlabels
+	Acanthamoeba_castellanii
+	Acanthamoeba_pyriformis
+	Acytostelium_subglobosum
+	Amoeba_proteus
+	'Amphizonella_sp.'
+	Arcella_intermedia
+	Cavostelium_apophysatum
+	Ceratiomyxa_fruticulosa
+	Clastostelium_recurvatum
+	Copromyxa_protea
+	'Crytodiffugia_sp.'
+	Cyclopyxis_impressa
+	Dictyostelium_discoideum
+	Dictyostelium_purpureum
+	Didymium_iridis
+	Difflugia_bryophila
+	Difflugia_compressa
+	'Diplochlamys_sp.'
+	Echinamoeba_exudans
+	Echinosteliopsis_oligospora
+	Endostelium
+	Filamoeba_nolandi
+	Gocevia_fonbrunei
+	Heleopera_sphagni
+	Hyalosphenia_elegans1
+	Hyalosphenia_elegans2
+	Hyalosphenia_papilio1
+	Hyalosphenia_papilio2
+	Luapeleamoeba_arachisporum
+	Mastigamoeba_balamuthi
+	Mastigella_eilhardi
+	Mayorella_sp
+	Microchlamys_patella
+	Microglomus_paxillus
+	Nebela_flabellulum
+	Nebela_militaris
+	'Nebela_sp.'
+	Nematostelium_gracile
+	Neoparamoeba_aestuarina
+	Netzelia_sp
+	Paradermamoeba_levis
+	Paramoeba_aestuarina
+	Paramoeba_invadens
+	Pellita_catalonica
+	Pelomyxa_schiedti
+	'Pessonella_sp._'
+	Phalansterium_solitarium
+	Planoprotostelium_fungivorum
+	Polysphondylium_pallidum
+	Protostelium_nocturum
+	Pyxidicula_operculata
+	Quadrulella_symmetrica
+	Rhizamoeba_saxonica
+	Rhizomastix_elongata
+	Rhizomastix_libera
+	'Ripella_sp.'
+	Schizoplasmodiopsis_vulgaris
+	Soliformovum_irregularis
+	Stereomyxa_ramosa
+	Thecamoeba_quadrilineata
+	Vannella_n_sp_
+	Vannella_robusta
+	Vermamoeba_cdc
+	'Vermamoeba_novel_sp.x'
+	'Vermamoeba_novel_sp.y'
+	'Vermamoeba_sp.'
+	Vermamoeba_vermiformis
+	Vermistella_antarctica
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (Rhizomastix_elongata:0.00603,(((((((Echinamoeba_exudans:0.55116,((Vermamoeba_cdc:0.021537,('Vermamoeba_sp.':0.045601,Vermamoeba_vermiformis:0.02476)[&label=100]:0.014137)[&label=100]:0.308335,('Vermamoeba_novel_sp.x':0.001136,'Vermamoeba_novel_sp.y':2.93E-4)[&label=100]:0.326092)[&label=100]:0.145356)[&label=100]:0.051781,('Amphizonella_sp.':0.316593,'Diplochlamys_sp.':0.339191)[&label=100]:0.226986)[&label=96]:0.034117,(Rhizamoeba_saxonica:0.680349,((((((Arcella_intermedia:0.251316,(Cyclopyxis_impressa:0.135577,Netzelia_sp:0.135959)[&label=100]:0.141857)[&label=100]:0.090248,(Difflugia_bryophila:0.135408,Difflugia_compressa:0.119335)[&label=100]:0.177928)[&label=100]:0.04296,(Quadrulella_symmetrica:0.122996,(((Hyalosphenia_papilio1:0.05044,Hyalosphenia_papilio2:0.040174)[&label=100]:0.053889,(('Nebela_sp.':0.0118,Nebela_flabellulum:0.003693)[&label=100]:0.098791,Nebela_militaris:0.083928)[&label=74]:0.01498)[&label=100]:0.02467,(Hyalosphenia_elegans1:0.016266,Hyalosphenia_elegans2:0.005438)[&label=100]:0.083496)[&label=100]:0.042056)[&label=100]:0.129614)[&label=100]:0.148718,((Microchlamys_patella:0.28602,Pyxidicula_operculata:0.343474)[&label=100]:0.060991,Heleopera_sphagni:0.342199)[&label=55]:0.027812)[&label=78]:0.042912,'Crytodiffugia_sp.':0.415127)[&label=100]:0.069606,(Amoeba_proteus:0.343277,Copromyxa_protea:0.303922)[&label=100]:0.287147)[&label=100]:0.09688)[&label=100,!cartoon={20,0.0},!collapse={"collapsed",0.0}]:0.116597)[&label=100]:0.15968,(((Microglomus_paxillus:0.603233,Paradermamoeba_levis:0.594881)[&label=54]:0.057113,(('Ripella_sp.':0.592459,(Vannella_n_sp_:0.421973,Vannella_robusta:0.450991)[&label=100]:0.159032)[&label=100]:0.159906,Thecamoeba_quadrilineata:0.619676)[&label=36]:0.033432)[&label=24,!collapse={"collapsed",0.1718652328999999}]:0.033154,(((((Acanthamoeba_castellanii:0.118268,Acanthamoeba_pyriformis:0.118068)[&label=100]:0.269528,Luapeleamoeba_arachisporum:0.377071)[&label=97]:0.052688,Stereomyxa_ramosa:0.449802)[&label=100]:0.058181,((Endostelium:0.491816,Gocevia_fonbrunei:0.263038)[&label=100]:0.074261,Pellita_catalonica:0.437904)[&label=100,!collapse={"collapsed",0.13726331870000008}]:0.146609)[&label=100]:0.130432,((((Neoparamoeba_aestuarina:0.010563,Paramoeba_aestuarina:0.017888)[&label=100]:0.078831,Paramoeba_invadens:0.087394)[&label=100]:0.587583,Mayorella_sp:0.513761)[&label=100]:0.154277,Vermistella_antarctica:0.597263)[&label=90,!collapse={"collapsed",0.08176959700000008}]:0.060033)[&label=25]:0.027998)[&label=74]:0.037039)[&label=97]:0.036119,('Pessonella_sp._':0.819274,((((Cavostelium_apophysatum:0.219069,Schizoplasmodiopsis_vulgaris:0.203021)[&label=100]:0.195798,(Soliformovum_irregularis:0.43251,Nematostelium_gracile:0.361176)[&label=100]:0.090011)[&label=96]:0.039592,((Planoprotostelium_fungivorum:0.315674,Protostelium_nocturum:0.269049)[&label=100]:0.251857,Filamoeba_nolandi:0.345906)[&label=99]:0.060417)[&label=97]:0.040145,Phalansterium_solitarium:0.51213)[&label=100]:0.092712)[&label=93,!collapse={"collapsed",0.2281998972000001}]:0.034064)[&label=100]:0.045269,(((Acytostelium_subglobosum:0.156991,Polysphondylium_pallidum:0.1313)[&label=100]:0.127698,(Dictyostelium_discoideum:0.115074,Dictyostelium_purpureum:0.129655)[&label=100]:0.149438)[&label=100]:0.330794,((Ceratiomyxa_fruticulosa:0.289325,Clastostelium_recurvatum:0.280197)[&label=100]:0.171837,(Didymium_iridis:0.313733,Echinosteliopsis_oligospora:0.339271)[&label=100]:0.13334)[&label=100,!collapse={"collapsed",0.49420896839999995}]:0.060804)[&label=100]:0.099183)[&label=100]:0.206754,((Mastigella_eilhardi:0.398267,Pelomyxa_schiedti:0.459931)[&label=100]:0.14168,Mastigamoeba_balamuthi:0.590064)[&label=73,!collapse={"collapsed",0.6807782590999998}]:0.051172)[&label=100]:0.640204,Rhizomastix_libera:0.010809);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute=null;
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute=null;
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute=null;
+	set nodeShapeInternal.colourAttribute=null;
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute=null;
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
