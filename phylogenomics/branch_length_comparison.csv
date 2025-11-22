@@ -1,0 +1,8 @@
+Species_1,Species_2,Length_to_CA_sp1,Length_to_CA_sp2,Avg_CA
+Nebela_flabellulum,Nebela_militaris,0.1025,0.0839,0.0932
+Hyalosphenia_papilio,Hyalosphenia_elegans,0.129,0.0998,0.1144
+Difflugia_compressa,Difflugia_bryphila,0.1193,0.1354,0.12735
+Acanthamoeba_pyriformis,Acanthamoeba_castellanii,0.1181,0.1183,0.1182
+Paramoeba_aestuarina,Paramoeba_invadens,0.0967,0.0874,0.09205
+Dictyostelium_purpureum,Dictyostelium_discoideum,0.1297,0.1151,0.1224
+Vermamoeba_vermiformis,Novel_amoeba,0.3439,0.3264,0.33515
