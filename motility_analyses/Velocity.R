@@ -83,14 +83,3 @@ View(mean_stats)
 #summary_stats$temp <- "57"  # name group in df
 write.csv(mean_stats,"mean_stats.csv")
 #clear console -> cat("\014")
-
-# Visualization -----------------------------------------------------------
-summary_stats$temp <- as.factor(summary_stats$temp)  #  convert to factor
-p<- ggplot(summary_stats, aes(x=temp, y=mean_speed,group=temp))+ coord_cartesian(ylim=c(0,95)) + geom_boxplot(outlier.shape = NA)+ 
-  geom_beeswarm(dodge.width=1,aes(color = temp), size = 0.5, alpha = 0.5,cex=0.25) + 
-  #scale_color_viridis_d(option = "D", direction = 1)#color by group eventully
-  scale_color_manual(values = custom_colors)
-p 
-p<-p + theme_bw()+ theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.text.x = element_blank()) + 
-  ylab("Median Velocity µm/min") 
-p
