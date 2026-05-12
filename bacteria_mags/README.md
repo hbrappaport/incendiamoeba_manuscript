@@ -1,6 +1,6 @@
 Content includes: 
 
-bact_mags.R - plotting scripts for Fig. S8
+bact_mags.R - additional plotting scripts
 
 bestmags_bowtie.csv - MAG stats
 
