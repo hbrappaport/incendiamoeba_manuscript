@@ -1,0 +1,15 @@
+2025-04-29 12:32:44 : Started OrthoFinder version 2.5.5
+Command Line: /clusterfs/jgi/groups/science/homes/berylrappaport/miniforge3/bin/orthofinder -f amoebacompare2
+
+WorkingDirectory_Base: /clusterfs/jgi/scratch/science/mgs/nelli/beryl/orthofinder/amoebacompare2/OrthoFinder/Results_Apr29/WorkingDirectory/
+
+Species used: 
+0: acastellanii_braker.faa
+1: bc2001_braker.faa
+2: bc2002_braker.faa
+3: dicty_braker.faa
+4: vvermcdc19_braker.faa
+
+FN_Orthogroups: /clusterfs/jgi/scratch/science/mgs/nelli/beryl/orthofinder/amoebacompare2/OrthoFinder/Results_Apr29/WorkingDirectory/clusters_OrthoFinder_I1.5.txt_id_pairs.txt
+WorkingDirectory_Trees: /clusterfs/jgi/scratch/science/mgs/nelli/beryl/orthofinder/amoebacompare2/OrthoFinder/Results_Apr29/WorkingDirectory/
+2025-04-29 12:57:24 : OrthoFinder run completed
