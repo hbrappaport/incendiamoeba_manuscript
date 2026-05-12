@@ -60,6 +60,9 @@ def find_disulfides(pdb_file, cutoff):
     # select all sulfur atoms from cysteines
     struc_md = md.load_pdb(pdb_file)
     sulfurs = struc_md.topology.select('resname CYS and name SG')
+    if len(sulfurs) == 0:
+        return 0
+
     positions = struc_md.xyz[0, sulfurs, :]  # single frame
 
     n = len(sulfurs)
@@ -246,9 +249,6 @@ def analyze_electrostats(struc_mdT):
     highly_exposed_frac = exposed / len(rsa_values)
 
 
-    
-
-
 
     #! uncomment if avg values are needed
     # mean_exposure = np.mean(rsa_values)
@@ -258,61 +258,6 @@ def analyze_electrostats(struc_mdT):
 
     return net_charge, surface_positive, surface_negative, surface_net_charge, highly_exposed_frac
 
-#TODO: Add in any pdb file names *without* extension that you want generated within csv file 
-PDB_of_interest=['vverm_actin_unrelaxed_rank_005_alphafold2_ptm_model_1_seed_000', 'incendi_actin_461ef_unrelaxed_rank_002_alphafold2_ptm_model_1_seed_000']
-
-results = []
-
-for name in PDB_of_interest: 
-
-    PDB_file = f"{name}.pdb"
-    print(f"Analyzing {PDB_file}")
-
-    #load pdb files into mdTraj or mdAnalysis
-    mdA_u = mda.Universe(f"{PDB_file}")
-    mdT_u = md.load_pdb(f"{PDB_file}")
-
-    #! assumed that HIS was neutral 
-    num_chains, num_residues, rg, helix_num, strand_num, coil_num = analyze_geometry(mdT_u)
-    total_sasa, hydro_frac, polar_frac, charged_frac, frac_pos, frac_neg, frac_sasa_per_residue = analyze_surface(mdT_u)
-    num_hbonds, num_salt_bridge, num_pipi, num_disulfides = analyze_interactions(PDB_file, mdA_u)
-    net_charge, surface_positive, surface_negative, surface_net_charge, highly_exposed_frac = analyze_electrostats(mdT_u)
 
 
-    result = {
-        "Name": name,
-        "num_chains": num_chains,
-        "num_residues": num_residues,
-        "Rg nm": rg,  # Rg is an array, take first element for single-frame PDB
-        "helix_num": helix_num,
-        "strand_num": strand_num,
-        "coil_num": coil_num,
-        "total_sasa A^2": total_sasa,  # sum across atoms for single frame
-        "frac_sasa_hydrophobic": hydro_frac,
-        "frac_sasa_polar": polar_frac,
-        "frac_sasa_charged": charged_frac,
-        "frac_sasa_pos_charge": frac_pos,
-        "frac_sasa_neg_charge": frac_neg,
-        "num_hbonds": num_hbonds,
-        "num_salt_bridge": num_salt_bridge,
-        "num_disulfides": num_disulfides,
-        "num_pipi": num_pipi,
-        "net_charge": net_charge,
-        "num_exposed_pos": surface_positive,
-        "num_exposed_neg": surface_negative,
-        "surface_net_charge": surface_net_charge,
-        "highly_exposed_frac": highly_exposed_frac
-    }
-
-    for res, frac in frac_sasa_per_residue.items():
-        result[f"frac_sasa_{res}"] = frac[0]
-
-    
-
-    
-    
-    results.append(result)
-
-df = pd.DataFrame(results)
-df.to_csv("analysis_results.csv", index=False)
 
