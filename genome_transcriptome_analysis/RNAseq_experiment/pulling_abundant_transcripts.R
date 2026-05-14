@@ -39,6 +39,7 @@ ggplot(tpms_accumulate, aes(reorder(Geneid, accumulate), accumulate, fill = "Gen
   #scale_y_log10() +
   scale_fill_manual(values = c("#C1532D")) +
   geom_vline(xintercept = 500, linetype = "dotted", size = 1) +
+  geom_hline(yintercept = 0.5, linetype = "dotted", size = 1) +
   theme_classic() +  
   theme(axis.text.x=element_blank(),
         axis.ticks.x=element_blank(), 
