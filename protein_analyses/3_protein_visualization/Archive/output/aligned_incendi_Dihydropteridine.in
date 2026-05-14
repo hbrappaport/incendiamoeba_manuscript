@@ -1,0 +1,25 @@
+read
+  mol pqr aligned_incendi_Dihydropteridine.pqr
+end
+elec
+  mg-auto
+  dime 129 129 129
+  fglen 80 80 80
+  cglen 100 100 100
+  cgcent mol 1
+  fgcent mol 1
+  mol 1
+  lpbe
+  bcfl sdh
+  pdie 2.0
+  sdie 78.54
+  srfm smol
+  chgm spl2
+  sdens 10.0
+  srad 1.4
+  temp 298.15
+  calcenergy total
+  calcforce no
+  write pot dx aligned_incendi_Dihydropteridine_pot
+end
+quit

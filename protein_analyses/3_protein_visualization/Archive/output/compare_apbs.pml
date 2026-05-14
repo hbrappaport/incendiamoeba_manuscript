@@ -1,0 +1,21 @@
+load aligned_incendi_Dihydropteridine.pqr, aligned_incendi_Dihydropteridine
+load aligned_incendi_Dihydropteridine_pot.dx
+show surface, aligned_incendi_Dihydropteridine
+ramp_new elec_aligned_incendi_Dihydropteridine, aligned_incendi_Dihydropteridine_pot.dx, [-5,0,5]
+color elec_aligned_incendi_Dihydropteridine, aligned_incendi_Dihydropteridine
+
+load aligned_vverm_Dihydropteridine.pqr, aligned_vverm_Dihydropteridine
+load aligned_vverm_Dihydropteridine_pot.dx
+show surface, aligned_vverm_Dihydropteridine
+ramp_new elec_aligned_vverm_Dihydropteridine, aligned_vverm_Dihydropteridine_pot.dx, [-5,0,5]
+color elec_aligned_vverm_Dihydropteridine, aligned_vverm_Dihydropteridine
+
+align aligned_vverm_Dihydropteridine, aligned_incendi_Dihydropteridine
+translate [40,0,0], aligned_vverm_Dihydropteridine
+
+set specular, 0.3
+set surface_quality, 1
+set ray_shadows, off
+bg_color white
+ray 1600,1200
+png aligned_incendi_Dihydropteridine_aligned_vverm_Dihydropteridine_comparison.png
